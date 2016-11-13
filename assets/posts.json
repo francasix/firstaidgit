@@ -286,4 +286,11 @@
     "content": "To list untracked files within untracked directories: \n\n `git status -u` \n\n. By default, git will not show files within directories that are untracked.",
     "help": "list untracked files within untracked directories",
     "cmds": "git status"
+},
+ {
+     "title": "Remove folder from history repository",
+     "content": "To remove completely a folder or a file from the first commit of a repository",
+     "help": "remove folder from repository",
+     "cmds" : "git filter-branch -f --tree-filter "rm -rf parentFolder/myFolder" --prune-empty -- --all"
+ 
 }]
